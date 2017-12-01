@@ -11,3 +11,5 @@ class Caps extends React.Component {
     </div>
   }
 }
+
+export default Caps;
