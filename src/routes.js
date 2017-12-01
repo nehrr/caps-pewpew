@@ -10,11 +10,12 @@ import Gallery from './components/Gallery';
 import Upload from './components/Upload';
 import Profile from './components/Profile';
 import NotFound from './components/NotFound';
+import Layout from './components/Layout';
 
 const MyRoute = () => (
   <Router>
 
-    <App name='layout'>
+    <Layout name='layout'>
       <Switch>
         <Route exact path="/" component={Home}/>
         <Route path="/gallery" component={Gallery}/>
@@ -22,7 +23,7 @@ const MyRoute = () => (
         <Route path='/profile' component={Profile} />
         <Route component={NotFound}/>
       </Switch>
-    </App>
+    </Layout>
 
   </Router>
 
