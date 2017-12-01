@@ -19,7 +19,6 @@ class Layout extends Component {
               <Link to='/upload'>Upload</Link>
               &nbsp; &nbsp;
               <Link to='/profile'>Profile</Link>
-
           </div>
         </header>
 

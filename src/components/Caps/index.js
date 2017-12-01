@@ -10,7 +10,7 @@ class Caps extends React.Component {
     return (
     <div>
       <img src='{address}' />
-      <h4>{Movie Title}</h4>
+      <h4>Movie Title</h4>
       <a>Share action</a>
       <a>Favourite action</a>
       <a>Like action</a>
