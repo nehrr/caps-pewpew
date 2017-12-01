@@ -2,6 +2,7 @@ import React from 'react';
 
 class Caps extends React.Component {
 
+  //<Caps picture='path' title='movie title' />
   render() {
     return (
       <div>

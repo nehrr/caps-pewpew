@@ -3,7 +3,7 @@ import Caps from '../Caps';
 import DataJSON from '../../caps.json';
 
 class Home extends React.Component {
-  
+
   constructor() {
     super();
     this.state = { caps: [] };
@@ -15,7 +15,7 @@ class Home extends React.Component {
     console.log(randomCaps);
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this._RandomCaps();
   }
 

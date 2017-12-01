@@ -16,14 +16,15 @@ class Gallery extends React.Component {
   }
 
   _getCaps() {
+    let id = 0;
     return this.state.caps.map( aCap => {
       return (
-        <Caps picture={aCap.pathcaps} title={aCap.movie} />
+        <Caps picture={aCap.pathcaps} title={aCap.movie} key={id++}/>
       )
     })
   };
 
-  componentWillMount() {
+  componentDidMount() {
     this._fetchData();
   }
 
