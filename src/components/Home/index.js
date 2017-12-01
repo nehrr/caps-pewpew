@@ -3,6 +3,7 @@ import Caps from '../Caps';
 import DataJSON from '../../caps.json';
 
 class Home extends React.Component {
+  
   constructor() {
     super();
     this.state = { caps: [] };

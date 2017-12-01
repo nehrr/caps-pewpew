@@ -5,11 +5,14 @@ class Caps extends React.Component {
   render() {
     return (
       <div>
-        <img src={this.props.picture} />
-        <h4>{this.props.movieTitle}</h4>
-        <a>Share action</a>
-        <a>Favourite action</a>
-        <a>Like action</a>
+        <div>
+          <img src={this.props.picture} />
+          <h1>{this.props.title}</h1>
+          <i class="fa fa-share fa-2x"></i>&nbsp;
+          <i class="fa fa-star-o fa-2x">{this.props.favourite}</i>&nbsp;
+          <i class="fa fa-heart-o fa-2x">{this.props.like}</i>
+        </div>
+        <br /><br />
       </div>
     )
   }
