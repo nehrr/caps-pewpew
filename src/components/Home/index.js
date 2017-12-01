@@ -21,11 +21,7 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        <img src={this.state.caps.pathcaps} />
-        <h4>{this.state.caps.movie}</h4>
-        <a>Share action</a>
-        <a>Favourite action</a>
-        <a>Like action</a>
+        <Caps picture={this.state.caps.pathcaps} title={this.state.caps.movie}/>
       </div>
     )
   }
