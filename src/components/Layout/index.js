@@ -12,6 +12,10 @@ class Layout extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to Caps</h1>
           <div className="App">
+              <Link to='/signin'>SignIn</Link>
+              &nbsp; &nbsp;
+              <Link to='/signup'>SignUp</Link>
+              &nbsp; &nbsp;
               <Link to='/'>Home</Link>
               &nbsp; &nbsp;
               <Link to='/gallery'>Gallery</Link>
