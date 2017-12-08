@@ -4,11 +4,11 @@ class Profile extends React.Component {
 
   render() {
     return (
-      <div class="tile is-ancestor">
-        <div class="tile is-4 is-vertical is-parent">
-          <div class="tile is-child box">
-            <p class="title">Profile</p>
-            <i class="fa fa-user fa-5x" aria-hidden="true"></i>
+      <div className="tile is-ancestor">
+        <div className="tile is-4 is-vertical is-parent">
+          <div className="tile is-child box">
+            <p className="title">Profile</p>
+            <i className="fa fa-user fa-5x" aria-hidden="true"></i>
             {/* <img src="" alt="avatar" /> */}
             <p>Username</p>
             <p>Firstname</p>
@@ -16,45 +16,45 @@ class Profile extends React.Component {
             <p>Birthdate</p>
             <p>Email</p>
           </div>
-          <div class="tile is-child box">
-            <p class="title">Update</p>
+          <div className="tile is-child box">
+            <p className="title">Update</p>
             <form id="user_edit">
-              <div class="field">
-                <div class="control">
-                  <input id="lastname" class="input" type="text" placeholder="Lastname" />
+              <div className="field">
+                <div className="control">
+                  <input id="lastname" className="input" type="text" placeholder="Lastname" />
                 </div>
               </div>
-              <div class="field">
-                <div class="control">
-                  <input id="firstname" class="input" type="text" placeholder="Firstname" />
+              <div className="field">
+                <div className="control">
+                  <input id="firstname" className="input" type="text" placeholder="Firstname" />
                 </div>
               </div>
-              <div class="field">
-                <p class="control has-icons-left has-icons-right">
-                  <input id="email" class="input" type="email" placeholder="Email" />
-                  <span class="icon is-small is-left">
-                    <i class="fa fa-envelope"></i>
+              <div className="field">
+                <p className="control has-icons-left has-icons-right">
+                  <input id="email" className="input" type="email" placeholder="Email" />
+                  <span className="icon is-small is-left">
+                    <i className="fa fa-envelope"></i>
                   </span>
-                  <span class="icon is-small is-right">
-                    <i class="fa fa-check"></i>
+                  <span className="icon is-small is-right">
+                    <i className="fa fa-check"></i>
                   </span>
                 </p>
               </div>
-              <div class="field">
-                <p class="control has-icons-left">
-                  <input id="password" class="input" type="password" placeholder="Password" />
-                  <span class="icon is-small is-left">
-                    <i class="fa fa-lock"></i>
+              <div className="field">
+                <p className="control has-icons-left">
+                  <input id="password" className="input" type="password" placeholder="Password" />
+                  <span className="icon is-small is-left">
+                    <i className="fa fa-lock"></i>
                   </span>
                 </p>
               </div>
-              <a class="button is-warning" onclick="">Update</a>
+              <a className="button is-warning" onclick="">Update</a>
             </form>
           </div>
         </div>
-        <div class="tile is-parent">
-          <div class="tile is-child box">
-            <p class="title">Favourites</p>
+        <div className="tile is-parent">
+          <div className="tile is-child box">
+            <p className="title">Favourites</p>
             <p>Maybe latest favourited caps ?</p>
           </div>
         </div>

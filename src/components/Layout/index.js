@@ -7,9 +7,9 @@ class Layout extends Component {
   render() {
     return (
       <div>
-        <section class="hero is-light is-medium">
+        <section className="hero is-light is-medium">
 
-          <div class="hero-head">
+          <div className="hero-head">
             <nav className="level">
               <p className="level-item has-text-centered">
                 <a className="link is-info"><Link to='/signin'>Sign In</Link></a>
@@ -37,9 +37,9 @@ class Layout extends Component {
           </div>
         </section>
 
-        <section class="hero is-dark is-fullheight">
-          <div class="hero-body">
-            <div class="container has-text-centered">
+        <section className="hero is-dark is-fullheight">
+          <div className="hero-body">
+            <div className="container has-text-centered">
               {this.props.children}
             </div>
           </div>

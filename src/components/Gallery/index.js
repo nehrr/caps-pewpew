@@ -1,6 +1,7 @@
 import React from 'react';
 import Caps from '../Caps';
-import DataJSON from '../../caps.json';
+import Axios from 'axios';
+// import DataJSON from '../../caps.json';
 
 class Gallery extends React.Component {
 
@@ -10,16 +11,17 @@ class Gallery extends React.Component {
   }
 
   _fetchData() {
-    let allCaps = DataJSON;
-    this.setState ({ caps: allCaps})
-    console.log(allCaps);
+    Axios.get('/screencaps/')
+    .then((res) => {
+      // console.log(res);
+      this.setState({caps: res.data.caps});
+    })
   }
 
   _getCaps() {
-    let id = 0;
     return this.state.caps.map( aCap => {
       return (
-        <Caps picture={aCap.pathcaps} title={aCap.movie} key={id++}/>
+        <Caps picture={aCap.path} title={aCap.movie.title} key={aCap.id}/>
       )
     })
   };
